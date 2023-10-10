@@ -7,45 +7,47 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/resultado"
+        android:id="@+id/tvResultado"
         android:layout_width="266dp"
         android:layout_height="74dp"
         android:text="Aquí irá el resultado"
         app:layout_constraintBottom_toTopOf="@+id/botonReset"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499" />
 
     <ImageButton
-        android:id="@+id/botonPiedra"
+        android:id="@+id/btnPiedra"
         android:layout_width="87dp"
         android:layout_height="78dp"
         android:scaleType="centerCrop"
-        app:layout_constraintBottom_toTopOf="@+id/resultado"
-        app:layout_constraintEnd_toStartOf="@+id/botonTijera"
+        app:layout_constraintBottom_toTopOf="@+id/tvResultado"
+        app:layout_constraintEnd_toStartOf="@+id/btnTijeras"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titulo"
         app:srcCompat="@drawable/piedra"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageButton
-        android:id="@+id/botonPapel"
+        android:id="@+id/btnPapel"
         android:layout_width="94dp"
         android:layout_height="77dp"
         android:scaleType="centerCrop"
-        app:layout_constraintBottom_toTopOf="@+id/resultado"
+        app:layout_constraintBottom_toTopOf="@+id/tvResultado"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/botonTijera"
+        app:layout_constraintStart_toEndOf="@+id/btnTijeras"
         app:layout_constraintTop_toBottomOf="@+id/titulo"
         app:srcCompat="@drawable/hojadepapel"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageButton
-        android:id="@+id/botonTijera"
+        android:id="@+id/btnTijeras"
         android:layout_width="95dp"
         android:layout_height="77dp"
         android:scaleType="centerCrop"
-        app:layout_constraintBottom_toTopOf="@+id/resultado"
+        app:layout_constraintBottom_toTopOf="@+id/tvResultado"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titulo"
@@ -83,12 +85,12 @@
         android:layout_marginBottom="208dp"
         android:text="0"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/TEXTOJUGADOR"
-        app:layout_constraintStart_toStartOf="@+id/TEXTOJUGADOR"
-        app:layout_constraintTop_toBottomOf="@+id/TEXTOJUGADOR" />
+        app:layout_constraintEnd_toEndOf="@+id/tvJugador"
+        app:layout_constraintStart_toStartOf="@+id/tvJugador"
+        app:layout_constraintTop_toBottomOf="@+id/tvJugador" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/tvMaquina"
         android:layout_width="70dp"
         android:layout_height="19dp"
         android:layout_marginTop="64dp"
@@ -96,7 +98,7 @@
         android:text="MÁQUINA"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/resultado" />
+        app:layout_constraintTop_toBottomOf="@+id/tvResultado" />
 
     <TextView
         android:id="@+id/marcadorM"
@@ -106,19 +108,19 @@
         android:layout_marginBottom="208dp"
         android:text="0"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/textView6"
-        app:layout_constraintStart_toStartOf="@+id/textView6"
-        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="@+id/tvMaquina"
+        app:layout_constraintStart_toStartOf="@+id/tvMaquina"
+        app:layout_constraintTop_toBottomOf="@+id/tvMaquina"
         app:layout_constraintVertical_bias="0.018" />
 
     <TextView
-        android:id="@+id/TEXTOJUGADOR"
+        android:id="@+id/tvJugador"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
         android:text="Jugador"
-        app:layout_constraintEnd_toStartOf="@+id/textView6"
+        app:layout_constraintEnd_toStartOf="@+id/tvMaquina"
         app:layout_constraintHorizontal_bias="0.382"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/resultado" />
+        app:layout_constraintTop_toBottomOf="@+id/tvResultado" />
 </androidx.constraintlayout.widget.ConstraintLayout>
